@@ -1,0 +1,195 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  border: 0 solid transparent;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(233, 47%, 7%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+}
+a:hover {
+  color: hsl(277, 64%, 61%);
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*--END RESET--------------------*/
+/*--START LAYOUT--------------------*/
+/*--START MAIN--------------------*/
+#main {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  height: 100vh;
+  margin-inline: auto;
+  padding-block: 1.25rem;
+  padding-inline: 1.5rem;
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  #main {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 900px) {
+  #main {
+    max-width: 1140px;
+    margin-inline: auto;
+  }
+}
+#main .main__attribution {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/*--END MAIN--------------------*/
+/*--END LAYOUT--------------------*/
+/*--START CARD--------------------*/
+.c {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.c__overall {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.c__overall-grid {
+  display: grid;
+  gap: 1rem;
+}
+.c__overall-title {
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+.c__overall-title--purple {
+  color: hsl(277, 64%, 61%);
+}
+.c__overall-description {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.c__info {
+  display: grid;
+  gap: 2rem;
+}
+.c__info-stats {
+  display: grid;
+  gap: 0.25rem;
+  transition: transform 0.3s linear;
+}
+.c__info-stats--heading {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+}
+.c__info-stats:hover {
+  transform: scale(1.2);
+  color: hsl(277, 64%, 61%);
+}
+.c__image {
+  position: relative;
+  grid-row: 1;
+}
+.c__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 87%, 27%, 0.5);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.c__image-mobile {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.c__image-desktop {
+  display: none;
+}
+@media (min-width: 900px) {
+  .c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .c__overall {
+    align-items: center;
+    justify-content: center;
+    max-width: 560px;
+    margin: 0;
+    padding: 3.75rem;
+    text-align: start;
+  }
+  .c__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .c__image {
+    grid-column: 2;
+  }
+  .c__image::after {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .c__image-mobile {
+    display: none;
+  }
+  .c__image-desktop {
+    display: block;
+    max-width: 540px;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+/*--END CARD--------------------*/
+
+/*# sourceMappingURL=e:/Designer/FrontendMentor/stats-preview-card-component-main/dist/styles.css.map */

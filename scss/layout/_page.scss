@@ -1,0 +1,32 @@
+// ========================== //
+//           PAGE             //
+// ========================== //
+
+@use "../base" as *;
+
+/*--START LAYOUT--------------------*/
+
+/*--START MAIN--------------------*/
+#main {
+  @include grid($rows: auto auto, $gap: $ss-6);
+  @include container(sm, $p: $ss-6);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-block: $ss-5;
+  @include mq(between, sm, md) {
+    @include container(md);
+  }
+  @include mq(min, md) {
+    @include container(xl);
+  }
+  .main {
+    &__attribution {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+}
+/*--END MAIN--------------------*/
+
+/*--END LAYOUT--------------------*/
