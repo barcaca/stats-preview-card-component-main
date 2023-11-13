@@ -25,7 +25,7 @@ Users should be able to:
 ![](images/screenshot.png)
 
 
-- Solution URL: [Front End Mentor](https://www.frontendmentor.io/solutions/stats-preview-card-component-sassscss-sgfRP4np4p)
+- Solution URL: [Stats Preview Card Component/Front End Mentor](https://www.frontendmentor.io/solutions/stats-preview-card-component-sassscss-sgfRP4np4p)
 - Live Site URL: [Vercel App](https://stats-preview-card-component-main-xi-ten.vercel.app)
 ## My process
 
